@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 //After the mouse leaves the block the color should return to white.
 
-$('.block').on('mouseover', '.block', function() {
+$(document).on('mouseover', '.block', function() {
     $(this).css('background-color', 'green'); 
  }).on('mouseout', '.block', function(){
   		$(this).css('background-color', 'white');
@@ -13,7 +13,7 @@ $('.block').on('mouseover', '.block', function() {
 
 //Remove the block when you click on it
 
-$(document).on('click', '.block', function() {
+$(document).on('click','.block', function() {
 	$(this).remove();
 });
 
@@ -37,6 +37,5 @@ setInterval(function(){
 }, frequency);
 
 
-});
 
 });
